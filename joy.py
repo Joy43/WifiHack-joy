@@ -20,7 +20,7 @@ from typing import Dict
 print('''
 \033[1;92m
 ╔═══════════════════════════════════════════════╗
-║               Recoded By SS Joy               ║
+║               Made By Joy               ║
 ╚═══════════════════════════════════════════════╝
 
 Hello, everyone! Join us with:

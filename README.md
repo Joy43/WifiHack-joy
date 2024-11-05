@@ -9,7 +9,7 @@
 $ apt update && apt upgrade
 $ apt install -y root-repo
 $ apt install -y git tsu python wpa-supplicant pixiewps iw
-$ git clone https://github.com/Joy43/wifi_joy.git
+$ git clone https://github.com/Joy43/WifiHack-joy.git
 $ cd WifiHack-joy
 $ chmod +x joy.py
 $ sudo python joy.py --help

